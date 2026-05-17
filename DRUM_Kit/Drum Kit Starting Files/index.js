@@ -3,13 +3,28 @@
 for(let i =  0 ; i < document.querySelectorAll(".drum").length; i++){
     
     
-    document.querySelectorAll(".drum")[i].addEventListener("click", function() {soundFunc(this.innerHTML);});
+    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+        
+        soundFunc(this.innerHTML);
+        buttonShadow(this.innerHTML);
     
+    
+    });
+    
+
 
 
 }
 
-document.addEventListener("keypress",function(event) {soundFunc(event.key);});
+document.addEventListener("keypress",function(event) {
+
+
+    soundFunc(event.key);
+
+    buttonShadow(event.key);
+
+
+});
 
 
 
@@ -55,4 +70,14 @@ function soundFunc(key){
 // document.addEventListener("keypress", soundFunc);
 
 
+
+function buttonShadow(key){
+    let activeButton = document.querySelector("."+key); //choosing thebutton
+    activeButton.classList.add("pressed"); // transparent now
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    }, 100); // tells to activate this function after this much milliseconds
+
+
+}
 

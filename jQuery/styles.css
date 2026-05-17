@@ -1,0 +1,42 @@
+.big-title{
+    font-size : 10rem;
+    color : rgba(255, 255, 255, 0.93);
+    font-family: cursive;
+    
+
+
+}
+.drum{
+            display: block;
+            padding: 15px 15px 15px 15px;
+            box-shadow: 50px;
+            color: white;
+            clear : left;
+            margin : 10px;
+            margin-left: auto;
+margin-right: auto;
+            
+        }
+.margin-50{
+    margin : 50px;
+}
+body {
+    background-color:  rgba(54, 11, 68, 0.411);
+    text-align: center;
+}
+
+
+button{
+    background-color: #59ff5f7f; /* Green */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 10px #164b18e2;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin : 10px;
+
+}
